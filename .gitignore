@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+target/
+.next/
+frontend/.next/
+out/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Anchor/Solana
+test-ledger/
+.anchor/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Keys (keep out of repo for security)
+keys/
+*.json.backup

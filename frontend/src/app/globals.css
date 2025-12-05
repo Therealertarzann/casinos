@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ==================== EXACT SOLPUMP.IO CSS ==================== */
+
+*, :before, :after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+:root {
+  --primary-green: #02DF98;
+  --primary-purple: #B27CFD;
+  --bg-dark: #141317;
+  --bg-darker: #0B0A0A;
+  --bg-card: #17151D;
+  --bg-input: #201F27;
+  --border-color: #272727;
+  --text-muted: #767676;
+  --text-secondary: #8B8B8B;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #0B0A0A;
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  line-height: inherit;
+  color: white;
+}
+
+/* Font Classes */
+.font-chakra {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-spacegrotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ==================== NAVBAR STYLES - EXACT SOLPUMP ==================== */
+
+.nav-bar-bg {
+  background: rgb(20, 19, 23);
+  backdrop-filter: blur(6px);
+}
+
+.nav-bar-link-bg {
+  background: radial-gradient(50% 100% at 50% 0%, rgba(238, 134, 255, 0.12), rgba(111, 95, 204, 0));
+  transform: rotate(180deg);
+}
+
+.nav-bar-active-link-bg {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.56), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+}
+
+.nav-bar-active-link-border {
+  background: linear-gradient(rgb(238, 134, 255), rgb(111, 95, 204));
+}
+
+.navbar-pump-coins-bg-hover {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.12), rgba(0, 0, 0, 0)), rgba(39, 39, 39, 0.72);
+}
+
+.navbar-wallet-bg-purple {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.56), rgba(0, 0, 0, 0)), linear-gradient(0deg, rgb(28, 28, 31), rgb(28, 28, 31)), rgb(20, 19, 23);
+  box-shadow: rgba(255, 255, 255, 0.04) 0px 2px inset, rgba(0, 0, 0, 0.24) 0px -2px inset;
+}
+
+.navbar-wallet-bg-green {
+  background: linear-gradient(0deg, rgba(89, 190, 134, 0.56), rgba(0, 0, 0, 0)), linear-gradient(0deg, rgb(28, 28, 31), rgb(28, 28, 31)), rgb(20, 19, 23);
+  box-shadow: rgba(255, 255, 255, 0.04) 0px 2px inset, rgba(0, 0, 0, 0.24) 0px -2px inset;
+}
+
+.navbar-claim-rewards-bg {
+  background: linear-gradient(0deg, rgba(2, 223, 152, 0.16), rgba(0, 0, 0, 0)), rgb(20, 19, 23);
+}
+
+.solpump-coin-nav-bg {
+  background: linear-gradient(180deg, #72509F 0%, #B27CFD 100%);
+}
+
+/* ==================== CHAT STYLES - EXACT SOLPUMP ==================== */
+
+.chat-message-bg {
+  background: linear-gradient(180deg, rgba(20, 19, 23, 0) 0%, #141317 100%);
+}
+
+/* Chat message background patterns - simulating SolPump images */
+.chat-message-user-bg {
+  background: linear-gradient(135deg, rgba(20, 19, 23, 0.95) 0%, rgba(28, 28, 31, 0.9) 100%);
+}
+
+.chat-message-streamer-bg {
+  background: linear-gradient(135deg, rgba(38, 203, 255, 0.08) 0%, rgba(3, 91, 119, 0.12) 50%, rgba(20, 19, 23, 0.95) 100%);
+}
+
+.chat-message-mod-bg {
+  background: linear-gradient(135deg, rgba(40, 255, 212, 0.08) 0%, rgba(0, 164, 112, 0.12) 50%, rgba(20, 19, 23, 0.95) 100%);
+}
+
+.chat-bottom-input-bg {
+  background: #121214;
+  border-top: 1px solid #171717;
+}
+
+.chat-box-level-5 {
+  background: linear-gradient(0deg, rgb(51, 51, 51), rgb(86, 86, 86));
+}
+
+.chat-box-level-5-text {
+  background: linear-gradient(rgb(204, 204, 204), rgb(118, 118, 118)) text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.chat-box-level-25 {
+  background: linear-gradient(0deg, rgb(35, 47, 50), rgb(39, 85, 112));
+}
+
+.chat-box-level-25-text {
+  background: linear-gradient(rgb(132, 227, 254), rgb(66, 187, 255)) text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.chat-box-level-50 {
+  background: linear-gradient(0deg, rgb(44, 37, 67), rgb(80, 58, 88));
+}
+
+.chat-box-level-50-text {
+  background: linear-gradient(rgb(238, 134, 255), rgb(111, 95, 204)) text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.chat-box-level-50-plus {
+  background: linear-gradient(0deg, rgb(65, 54, 51), rgb(114, 55, 55));
+}
+
+.chat-box-level-50-plus-text {
+  background: linear-gradient(rgb(201, 140, 122), rgb(255, 91, 91)) text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.chat-box-mod {
+  background: linear-gradient(283.32deg, rgb(2, 223, 152), rgb(7, 148, 102));
+  box-shadow: rgb(40, 255, 212) 0px 1px inset;
+}
+
+.chat-box-streamer {
+  background: linear-gradient(283.32deg, rgb(38, 203, 255), rgb(3, 91, 119));
+  box-shadow: rgb(99, 221, 255) 0px 1px inset;
+}
+
+.chat-box-owner {
+  background: linear-gradient(0deg, rgb(201, 140, 122), rgb(255, 91, 91));
+  box-shadow: rgb(201, 140, 122) 0px 1px inset;
+}
+
+.chat-box-bot {
+  background: linear-gradient(315deg, rgba(2, 223, 152, 0.56), rgba(0, 0, 0, 0) 50%), linear-gradient(135deg, rgba(145, 68, 250, 0.56), rgba(0, 0, 0, 0) 50%), rgb(39, 39, 39);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 5px, rgba(255, 255, 255, 0.12) 0px 1px inset, rgba(0, 0, 0, 0.24) 0px -1px inset;
+}
+
+/* ==================== AIRDROP STYLES ==================== */
+
+.airdrop-amount-bg {
+  background: linear-gradient(90deg, rgba(2, 223, 152, 0.1) 0%, transparent 100%);
+}
+
+.airdrop-chat-overlay-bg {
+  background: linear-gradient(180deg, rgba(114, 80, 159, 0.6) 0%, transparent 100%);
+}
+
+.airdrop-tip-btn {
+  background: linear-gradient(180deg, #72509F 0%, #4A3366 100%);
+}
+
+.airdrop-bg {
+  background: linear-gradient(135deg, rgba(114, 80, 159, 0.2) 0%, rgba(23, 21, 29, 0.9) 100%);
+}
+
+/* ==================== CRASH GAME STYLES - EXACT SOLPUMP ==================== */
+
+.crash-bet-container,
+.bg-crash-bet-container {
+  background: linear-gradient(rgb(28, 28, 31), rgba(28, 28, 31, 0)), rgb(20, 19, 23);
+}
+
+.crash-container-border {
+  background: linear-gradient(to right bottom, rgb(28, 28, 31), rgb(28, 28, 31) 55%, rgb(47, 38, 61) 75%, rgb(47, 38, 61));
+}
+
+.crash-bet-entry-bg-normal {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.16), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+}
+
+.crash-bet-entry-bg-won {
+  background: linear-gradient(0deg, rgba(2, 223, 152, 0.16), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+}
+
+.crash-bet-entry-bg-bust {
+  background: linear-gradient(0deg, rgba(252, 90, 90, 0.16), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+}
+
+.crash-bet-entry-prepare {
+  background: rgb(20, 19, 23);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 5px, rgba(0, 0, 0, 0.24) 0px -2px inset, rgba(255, 255, 255, 0.07) 0px 2px inset;
+}
+
+.crash-bet-entry-bg-partial {
+  background: linear-gradient(0deg, rgba(2, 223, 152, 0.08), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+}
+
+.crash-form-base-btn {
+  background: transparent;
+  transition: 0.5s;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.crash-game-progress-bar {
+  background: linear-gradient(rgb(238, 134, 255), rgb(189, 95, 204)), rgb(18, 18, 20);
+  transform: rotate(180deg);
+}
+
+.crash-game-progress-bar-border {
+  background: linear-gradient(90deg, rgba(35, 35, 39, 0), rgb(35, 35, 39)), rgb(35, 35, 39);
+}
+
+.crash-game-starting-timer,
+.crash-blockchain-text {
+  background: linear-gradient(rgb(224, 203, 254), rgb(116, 75, 174)) text, linear-gradient(rgb(219, 219, 219), rgb(117, 117, 117));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.crash-multiplier-text {
+  background: linear-gradient(rgb(219, 219, 219), rgb(117, 117, 117)) text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.crash-multiplier-text-crashed {
+  background: linear-gradient(rgb(252, 90, 90), rgb(221, 45, 45)) text, linear-gradient(rgb(219, 219, 219), rgb(117, 117, 117));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.crash-payout-box {
+  background-image: radial-gradient(100% 100% at 50% 0%, rgba(0, 227, 158, 0.4), rgba(0, 227, 158, 0.2));
+  background-repeat: no-repeat;
+  background-size: contain;
+  backdrop-filter: blur(1.5px);
+}
+
+/* ==================== MULTIPLIER HISTORY - EXACT SOLPUMP ==================== */
+
+.multiplier-bg-history-common {
+  background: radial-gradient(50% 50% at 50% 0%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), rgb(28, 28, 31);
+}
+
+.multiplier-bg-history-green {
+  background: radial-gradient(50% 50% at 50% 0%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), radial-gradient(50% 100% at 50% 100%, rgba(17, 167, 119, 0.36), rgba(0, 0, 0, 0)), rgba(17, 167, 119, 0.12);
+}
+
+.multiplier-bg-history-purple {
+  background: radial-gradient(50% 50% at 50% 0%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), radial-gradient(50% 100% at 50% 100%, rgba(178, 124, 253, 0.36), rgba(0, 0, 0, 0)), rgba(178, 124, 253, 0.12);
+}
+
+.multiplier-bg-history-gold {
+  background: linear-gradient(99.09deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0)), radial-gradient(50% 50% at 50% 0%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), radial-gradient(50% 100% at 50% 100%, rgba(255, 214, 107, 0.36), rgba(0, 0, 0, 0)), rgba(255, 214, 107, 0.12);
+}
+
+/* ==================== BUTTON STYLES ==================== */
+
+.default-submit-small-button {
+  background: #272727;
+  transition: all 0.2s ease;
+}
+
+.default-submit-small-button:hover {
+  background: #191919;
+}
+
+.place-bet-form-submit-button {
+  background: rgb(114, 80, 159);
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.place-bet-form-submit-button:hover:not(:disabled) {
+  background: rgba(114, 80, 159, 0.68);
+}
+
+.place-bet-form-submit-button:disabled {
+  background: transparent;
+  transition: 0.5s;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.modal-submit-button {
+  background: linear-gradient(180deg, #B27CFD 0%, #72509F 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+/* ==================== SHADOW STYLES - EXACT SOLPUMP ==================== */
+
+.shadow-default-box-shadow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-default-box-shadow-top {
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-default-button-shadow {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-bet-inputs-shadow {
+  --tw-shadow: 0px 2px 0px 0px #FFFFFF12 inset;
+  box-shadow: var(--tw-shadow);
+}
+
+.shadow-crash-history-shadow {
+  --tw-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--tw-shadow);
+}
+
+.shadow-crash-control-box-shadow {
+  --tw-shadow: 0px -2px 0px #242427;
+  box-shadow: var(--tw-shadow);
+}
+
+.shadow-solpump-coin-shadow {
+  box-shadow: 0px 0px 15px rgba(178, 124, 253, 0.5);
+}
+
+.shadow-airdrop-amount-glow {
+  box-shadow: 0px 0px 20px rgba(2, 223, 152, 0.3);
+}
+
+/* ==================== TEXT GRADIENTS ==================== */
+
+.text-basic {
+  color: #A1A1A1;
+}
+
+.avatar-username-text-shadow:hover {
+  text-shadow: 0 0 10px rgba(178, 124, 253, 0.5);
+}
+
+/* ==================== FOOTER STYLES ==================== */
+
+.footer-bg {
+  background: linear-gradient(180deg, #17151D 0%, #0D0D0D 100%);
+  border: 1px solid #272727;
+}
+
+.footer-discord-bg {
+  background: #5865F2;
+}
+
+.footer-twitter-bg {
+  background: #1DA1F2;
+}
+
+.footer-telegram-bg {
+  background: #0088CC;
+}
+
+.footer-kick-bg {
+  background: #53FC18;
+}
+
+.footer-reddit-bg {
+  background: #FF4500;
+}
+
+/* ==================== SPINNER ==================== */
+
+.spinner-purple {
+  border: 3px solid rgba(178, 124, 253, 0.2);
+  border-top-color: #B27CFD;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ==================== PROGRESS SLIDER ==================== */
+
+.progress-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #272727;
+  border-radius: 3px;
+  outline: none;
+}
+
+.progress-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(180deg, #02DF98 0%, #00A470 100%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ==================== SCROLLBAR ==================== */
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-thin-2px::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scrollbar-thin-2px::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin-2px::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 1px;
+}
+
+/* ==================== COINFLIP ANIMATION ==================== */
+
+@keyframes coinflipPulseSpin {
+  0% { transform: rotate(0deg); opacity: 0.5; }
+  50% { transform: rotate(180deg); opacity: 1; }
+  100% { transform: rotate(360deg); opacity: 0.5; }
+}
+
+.animate-coinflipPulseSpin {
+  animation: coinflipPulseSpin 2s linear infinite;
+}
+
+/* ==================== INPUT STYLES ==================== */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ==================== WRAPPER ==================== */
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  width: 93%;
+}
+
+/* ==================== WALLET ADAPTER OVERRIDES ==================== */
+
+.wallet-adapter-button {
+  background: linear-gradient(180deg, #02DF98 0%, #00A470 100%) !important;
+  border-radius: 8px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.wallet-adapter-button:hover {
+  box-shadow: 0 0 20px rgba(2, 223, 152, 0.4) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: #17151D !important;
+  border: 1px solid #272727 !important;
+}
+
+.wallet-adapter-modal-list li {
+  background: rgba(39, 39, 39, 0.36) !important;
+}
+
+.wallet-adapter-modal-list li:hover {
+  background: rgba(39, 39, 39, 0.72) !important;
+}
+
+/* ==================== CUSTOM SCROLLBAR ==================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141317;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #72509F;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B27CFD;
+}
+
+/* ==================== COINFLIP GAME STYLES - EXACT SOLPUMP ==================== */
+
+.coinflip-game-card {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.08), rgba(0, 0, 0, 0)), rgb(20, 19, 23);
+  border: 1px solid rgba(39, 39, 39, 0.5);
+  transition: all 0.2s ease;
+}
+
+.coinflip-game-card:hover {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.16), rgba(0, 0, 0, 0)), rgb(20, 19, 23);
+  border-color: rgba(114, 80, 159, 0.3);
+}
+
+.coinflip-sol-coin {
+  background: linear-gradient(180deg, #00FFA3 0%, #03E1FF 100%);
+}
+
+.coinflip-pump-coin {
+  background: linear-gradient(180deg, #EE86FF 0%, #6F5FCC 100%);
+}
+
+.coinflip-vs-divider {
+  background: linear-gradient(180deg, transparent 0%, rgba(39, 39, 39, 0.5) 50%, transparent 100%);
+}
+
+.coinflip-waiting-slot {
+  background: linear-gradient(0deg, rgba(39, 39, 39, 0.36), rgba(39, 39, 39, 0.12));
+  border: 2px dashed rgba(118, 118, 118, 0.3);
+}
+
+.coinflip-amount-box {
+  background: linear-gradient(0deg, rgba(91, 62, 130, 0.24), rgba(0, 0, 0, 0)), rgb(28, 28, 31);
+  border: 1px solid rgba(114, 80, 159, 0.2);
+}
+
+.coinflip-join-btn {
+  background: linear-gradient(180deg, #02DF98 0%, #00A470 100%);
+  box-shadow: rgba(2, 223, 152, 0.3) 0px 4px 12px;
+  transition: all 0.2s ease;
+}
+
+.coinflip-join-btn:hover {
+  background: linear-gradient(180deg, #00E89E 0%, #00B878 100%);
+  box-shadow: rgba(2, 223, 152, 0.5) 0px 6px 16px;
+}
+
+.coinflip-create-btn {
+  background: linear-gradient(180deg, #EE86FF 0%, #6F5FCC 100%);
+  box-shadow: rgba(178, 124, 253, 0.3) 0px 4px 12px;
+  transition: all 0.2s ease;
+}
+
+.coinflip-create-btn:hover {
+  background: linear-gradient(180deg, #F599FF 0%, #8471D9 100%);
+  box-shadow: rgba(178, 124, 253, 0.5) 0px 6px 16px;
+}
+
+.coinflip-status-joinable {
+  color: #02DF98;
+  text-shadow: 0 0 8px rgba(2, 223, 152, 0.5);
+}
+
+.coinflip-status-inplay {
+  color: #B27CFD;
+  text-shadow: 0 0 8px rgba(178, 124, 253, 0.5);
+}
+
+.coinflip-status-finishing {
+  color: #FFD66B;
+  text-shadow: 0 0 8px rgba(255, 214, 107, 0.5);
+}
+
+.coinflip-header-bg {
+  background: linear-gradient(180deg, rgba(20, 19, 23, 0) 0%, rgba(114, 80, 159, 0.08) 100%);
+}
+
+.coinflip-input-container {
+  background: linear-gradient(0deg, rgba(39, 39, 39, 0.36), rgba(0, 0, 0, 0)), rgb(20, 19, 23);
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.coinflip-side-btn {
+  background: rgba(39, 39, 39, 0.36);
+  border: 1px solid rgba(39, 39, 39, 0.72);
+  transition: all 0.2s ease;
+}
+
+.coinflip-side-btn:hover {
+  background: rgba(39, 39, 39, 0.72);
+}
+
+.coinflip-side-btn.active-sol {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.2) 0%, rgba(3, 225, 255, 0.2) 100%);
+  border-color: #00FFA3;
+}
+
+.coinflip-side-btn.active-pump {
+  background: linear-gradient(180deg, rgba(238, 134, 255, 0.2) 0%, rgba(111, 95, 204, 0.2) 100%);
+  border-color: #EE86FF;
+}
+
+.coinflip-sort-dropdown {
+  background: rgba(39, 39, 39, 0.36);
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.coinflip-games-container {
+  background: linear-gradient(180deg, rgb(20, 19, 23) 0%, rgb(13, 13, 13) 100%);
+  border: 1px solid rgba(39, 39, 39, 0.5);
+}
+
+/* Coinflip Avatar Styles */
+.coinflip-avatar {
+  background: linear-gradient(180deg, #4A3F5F 0%, #2D2640 100%);
+  border: 2px solid rgba(39, 39, 39, 0.72);
+}
+
+.coinflip-avatar-empty {
+  background: linear-gradient(0deg, rgba(39, 39, 39, 0.36), rgba(0, 0, 0, 0)), rgb(20, 19, 23);
+  border: 2px dashed rgba(118, 118, 118, 0.3);
+}
+
+/* Coin flip animation */
+@keyframes coinFlip3D {
+  0% { transform: rotateY(0deg) scale(1); }
+  25% { transform: rotateY(180deg) scale(1.1); }
+  50% { transform: rotateY(360deg) scale(1); }
+  75% { transform: rotateY(540deg) scale(1.1); }
+  100% { transform: rotateY(720deg) scale(1); }
+}
+
+.animate-coin-flip {
+  animation: coinFlip3D 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes coinGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(178, 124, 253, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(178, 124, 253, 0.6); }
+}
+
+.animate-coin-glow {
+  animation: coinGlow 1.5s ease-in-out infinite;
+}
+
+/* ==================== CRASH GAME STYLES - EXACT SOLPUMP ==================== */
+
+/* Crash History Pills */
+.crash-history-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.shadow-crash-history-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Crash Bet Container */
+.crash-bet-container {
+  background: linear-gradient(180deg, rgba(23, 21, 29, 0.95) 0%, rgba(11, 10, 10, 0.98) 100%);
+  border: 1px solid rgba(39, 39, 39, 0.5);
+}
+
+.shadow-crash-control-box-shadow {
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Crash Game Progress Bar */
+.crash-game-progress-bar {
+  background: linear-gradient(90deg, #B27CFD 0%, #72509F 100%);
+  box-shadow: 0 0 10px rgba(178, 124, 253, 0.5);
+}
+
+/* Crash Multiplier Text */
+.crash-multiplier-text {
+  text-shadow: 0 0 20px rgba(2, 223, 152, 0.5);
+}
+
+/* Crash Payout Box */
+.crash-payout-box {
+  background: linear-gradient(180deg, rgba(2, 223, 152, 0.15) 0%, rgba(2, 223, 152, 0.05) 100%);
+  border: 1px solid rgba(2, 223, 152, 0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+/* Crash Form Base Button */
+.crash-form-base-btn {
+  background: rgba(39, 39, 39, 0.36);
+  border: 1px solid rgba(39, 39, 39, 0.72);
+  transition: all 0.2s ease;
+}
+
+.crash-form-base-btn:hover {
+  background: rgba(39, 39, 39, 0.72);
+}
+
+/* Crash Bet Entry Backgrounds */
+.crash-bet-entry-bg-normal {
+  background: linear-gradient(135deg, rgba(23, 21, 29, 0.8) 0%, rgba(11, 10, 10, 0.9) 100%);
+  border: 1px solid rgba(39, 39, 39, 0.3);
+}
+
+.crash-bet-entry-bg-partial {
+  background: linear-gradient(135deg, rgba(178, 124, 253, 0.1) 0%, rgba(114, 80, 159, 0.05) 100%);
+  border: 1px solid rgba(178, 124, 253, 0.2);
+}
+
+.crash-bet-entry-bg-won {
+  background: linear-gradient(135deg, rgba(2, 223, 152, 0.15) 0%, rgba(2, 223, 152, 0.05) 100%);
+  border: 1px solid rgba(2, 223, 152, 0.3);
+}
+
+/* Crash Container Border */
+.crash-container-border {
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0.5) 0%, rgba(39, 39, 39, 0.2) 100%);
+}
+
+/* Crash Game Canvas Area */
+.crash-game-area {
+  background: linear-gradient(180deg, #080810 0%, #0a0a12 100%);
+  border: 1px solid rgba(39, 39, 39, 0.3);
+}
+
+/* Crash Grid Lines */
+.crash-grid-line {
+  stroke: rgba(26, 58, 74, 0.6);
+}
+
+/* Crash Waiting State */
+.crash-waiting-text {
+  color: #666;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Crash Running State Multiplier */
+.crash-running-multiplier {
+  background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
+}
+
+/* Crash Crashed State */
+.crash-crashed-multiplier {
+  background: linear-gradient(180deg, #ff4757 0%, #ff6b7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 4px 8px rgba(255, 71, 87, 0.4));
+}
+
+/* Cashout Button */
+.crash-cashout-btn {
+  background: linear-gradient(180deg, #02DF98 0%, #00A470 100%);
+  box-shadow: 0 4px 12px rgba(2, 223, 152, 0.4);
+  transition: all 0.2s ease;
+}
+
+.crash-cashout-btn:hover {
+  background: linear-gradient(180deg, #00E89E 0%, #00B878 100%);
+  box-shadow: 0 6px 16px rgba(2, 223, 152, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Player List Entries */
+.crash-player-entry {
+  background: linear-gradient(135deg, rgba(23, 21, 29, 0.6) 0%, rgba(11, 10, 10, 0.8) 100%);
+  border: 1px solid rgba(39, 39, 39, 0.3);
+  transition: all 0.2s ease;
+}
+
+.crash-player-entry:hover {
+  background: linear-gradient(135deg, rgba(23, 21, 29, 0.8) 0%, rgba(11, 10, 10, 0.9) 100%);
+  border-color: rgba(114, 80, 159, 0.3);
+}
+
+.crash-player-entry-cashed {
+  background: linear-gradient(135deg, rgba(2, 223, 152, 0.1) 0%, rgba(2, 223, 152, 0.05) 100%);
+  border: 1px solid rgba(2, 223, 152, 0.2);
+}
+
+/* Player Status Badges */
+.crash-status-joined {
+  background: rgba(178, 124, 253, 0.15);
+  color: #B27CFD;
+  border: 1px solid rgba(178, 124, 253, 0.3);
+}
+
+.crash-status-cashed {
+  background: rgba(2, 223, 152, 0.15);
+  color: #02DF98;
+  border: 1px solid rgba(2, 223, 152, 0.3);
+}
+
+.crash-status-lost {
+  background: rgba(255, 71, 87, 0.15);
+  color: #ff4757;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+}
+
+/* Bet Input Container */
+.crash-input-container {
+  background: linear-gradient(0deg, rgba(39, 39, 39, 0.24) 0%, rgba(0, 0, 0, 0) 100%), rgb(17, 17, 17);
+  border: 1px solid rgb(34, 34, 34);
+}
+
+/* Quick Amount Buttons */
+.crash-quick-btn {
+  background: rgb(34, 34, 34);
+  transition: all 0.15s ease;
+}
+
+.crash-quick-btn:hover {
+  background: rgb(42, 42, 42);
+}
+
+/* Auto Cashout Toggle */
+.crash-toggle-on {
+  color: #02DF98;
+}
+
+.crash-toggle-off {
+  color: #ff4757;
+}
+
+/* Crash Orb Animation for Waiting State */
+@keyframes crashOrbPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(2, 223, 152, 0.4), 0 0 40px rgba(2, 223, 152, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(2, 223, 152, 0.6), 0 0 60px rgba(2, 223, 152, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+.crash-orb {
+  background: radial-gradient(circle at 30% 30%, #5DFFC4 0%, #02DF98 40%, #00A070 100%);
+  animation: crashOrbPulse 2s ease-in-out infinite;
+}
+
+/* Crash Rocket Trail */
+@keyframes rocketTrail {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.crash-rocket-trail {
+  animation: rocketTrail 0.3s ease-in-out infinite;
+}
+
+/* Crash Line Glow */
+@keyframes crashLineGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(2, 223, 152, 0.5)); }
+  50% { filter: drop-shadow(0 0 8px rgba(2, 223, 152, 0.8)); }
+}
+
+.crash-line-glow {
+  animation: crashLineGlow 1s ease-in-out infinite;
+}
+
+/* Stats Header */
+.crash-stats-header {
+  background: linear-gradient(180deg, rgba(23, 21, 29, 0) 0%, rgba(114, 80, 159, 0.08) 100%);
+  border-bottom: 1px solid rgba(39, 39, 39, 0.5);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+}
