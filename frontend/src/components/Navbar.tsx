@@ -266,9 +266,13 @@ export const Navbar: FC = () => {
         </Link>
 
         {/* Select Wallet Button - Green CTA */}
-        <button className="hidden lg:flex h-12 items-center justify-center gap-2 rounded-lg bg-[#02DF98] px-6 font-spacegrotesk text-[15px] font-bold text-black transition-colors hover:bg-[#00C584]">
-          Select Wallet
-        </button>
+        {connected ? (
+          <div className="hidden lg:flex h-12 items-center justify-center gap-2 rounded-lg bg-[#1a1a1a] px-4 font-spacegrotesk text-[14px] font-bold text-white border border-[#02DF98]">
+            {publicKey?.toBase58().slice(0, 4)}...{publicKey?.toBase58().slice(-4)}
+          </div>
+        ) : (
+          <WalletMultiButton className="hidden lg:flex h-12 items-center justify-center gap-2 rounded-lg bg-[#02DF98] px-6 font-spacegrotesk text-[15px] font-bold text-black transition-colors hover:bg-[#00C584]" />
+        )}
       </div>
 
       {/* Mobile Bottom Nav */}
